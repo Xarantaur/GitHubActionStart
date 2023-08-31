@@ -1,0 +1,10 @@
+name: Javascript Commands
+
+on: [push]
+
+jobs:
+  run-github-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple JS Action
+        uses: actions/hello-world-javascript-action@master
