@@ -1,4 +1,4 @@
-name: shell Commands
+name: shell 2 Commands
 
 on: [push]
 
@@ -17,3 +17,11 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-windows-command:
+    runs-on: windows-lastest
+    steps:
+     - name: Directory Powershell
+       run: Get-Location
+     - name: Directory Bash
+       run: pwd
+       shell: bash
